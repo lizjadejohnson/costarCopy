@@ -1,0 +1,239 @@
+/* Nav Bar Styles: */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  vertical-align: baseline;
+  width: 100%;
+}
+.navsection {
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  margin-top: 0.5em;
+  padding-left: 1em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  padding: 0.3em;
+  display: block;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#left {
+  font-family: "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #575657;
+}
+
+#right {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: end;
+  padding-right: 4em;
+  font-size: 12px;
+  color: #575657;
+  letter-spacing: 0.05em;
+}
+
+#right a {
+  margin-right: 20px; /* Adjust the spacing to your preference */
+  color: #575657;
+  text-decoration: none;
+}
+
+#right a:hover {
+  text-decoration: underline;
+}
+
+/* Optionally, remove the margin from the last link to avoid extra spacing on the right end */
+#right a:last-child {
+  margin-right: 0;
+}
+
+/* Main Content Styles: */
+
+.contentMain {
+  text-align: center;
+  padding-top: 7em;
+}
+
+h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 45px;
+  font-weight: 500;
+  color: #575657;
+  margin-bottom: 0.3em;
+}
+
+.subtitle {
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  padding-bottom: 3em;
+}
+
+.mainBtnContainer {
+  padding-bottom: 3em;
+}
+
+.upperMainBtns {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.mainButtons {
+  font-family: "IBM Plex Sans";
+  font-size: 13px;
+  padding: 0.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 12em;
+}
+
+#iosBtn,
+#iosBtn a {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 1px;
+  text-decoration: none;
+}
+
+#androidBtn,
+#androidBtn a {
+  background-color: black;
+  color: #fbfbfb;
+  border-color: #000000;
+  border-radius: 1px;
+  border-style: none;
+  text-decoration: none;
+}
+
+.mainBtnSub {
+  font-size: 12px;
+  color: #575657;
+  letter-spacing: 0.05em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.mainBtnSub a {
+  margin-right: 20px; /* Adjust the spacing to your preference */
+  color: #404040;
+  text-decoration: none;
+}
+
+.contentMainIMG {
+  align-items: center;
+  margin-bottom: -0.25em;
+}
+
+.contentMainIMG img {
+  width: 50em;
+}
+
+/* About Content Styles */
+
+.aboutContent {
+  background-color: #141414;
+  color: #fbfbfb;
+  padding: 5em;
+}
+
+.aboutTitle {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.innerAboutContainer {
+  display: flex;
+  gap: 4em;
+  justify-content: space-around;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.aboutCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutCardTop {
+  margin-bottom: 2em;
+}
+
+.aboutCardTop img {
+  width: 8em;
+}
+
+.aboutCardBottom {
+  font-size: 16px;
+  text-align: center;
+}
+
+.aboutCardTop :hover {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-0.2deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(0.2deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(0.2deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-0.2deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-0.2deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(0.2deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-0.2deg);
+  }
+}
